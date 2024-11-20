@@ -1,0 +1,70 @@
+/*+ Header: */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.header__back-button {
+    width: fit-content;
+    color: #32cd32;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    border: 2px solid #32cd32;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+}
+.header__back-button:hover {
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+    color: #000;
+}
+
+/*+ Quotes: */
+.quotes {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.quotes__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #32cd32;
+}
+
+.quotes__display {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.quotes__text {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0;
+}
+
+.quotes__button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: #32cd32;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.quotes__button:hover {
+    background-color: #ff00ff;
+    color: #fff;
+}

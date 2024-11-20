@@ -1,0 +1,79 @@
+/*+ базовые стили: */
+.button {
+    background-color: #32cd32;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button:hover {
+    background-color: #ff00ff;
+    color: #fff;
+}
+
+.header {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.header__back-button {
+    background-color: #ff00ff;
+    color: #32cd32;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header__back-button:hover {
+    background-color: #32cd32;
+    color: #ff00ff;
+}
+
+.timer {
+    text-align: center;
+}
+
+.timer__input-group {
+    margin-bottom: 20px;
+}
+
+.timer__label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.timer__input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ff00ff;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.timer__input:focus {
+    border-color: #32cd32;
+}
+
+.timer__start-button {
+    margin-right: 10px;
+}
+
+.timer__display {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.timer__message {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ff0000;
+}

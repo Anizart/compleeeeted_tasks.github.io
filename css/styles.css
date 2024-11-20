@@ -1,0 +1,77 @@
+body {
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.block-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 28px;
+}
+
+.block {
+    width: 100%;
+    background-color: #222;
+    border: 2px solid #32CD32;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    line-height: 1.2;
+}
+.block:hover {
+    transform: scale(1.05);
+    border-color: #FF00FF;
+}
+
+.block .link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.image {
+    height: 150px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;
+    position: relative;
+}
+.block:hover > .link:after {
+    content: 'Вперёд!';
+    font-size: clamp(14px, 2vw, 25px);
+    color: #FF00FF;
+    font-weight: 700;
+    transition: 0.3s;
+    position: absolute;
+    top: calc(50% - 30px);
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.block:hover .image {
+    filter: blur(4px);
+}
+
+.description {
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block:hover .description {
+    background-color: #FF00FF;
+    color: #ffffff;
+}
