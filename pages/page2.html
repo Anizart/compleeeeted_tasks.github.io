@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор карточек</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/page2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="../index.html" class="header__back-button">Назад</a>
+        </header>
+        <main class="catalog">
+            <div class="container">
+                <section class="catalog__form-section">
+                    <h1 class="catalog__title">Добавить товар</h1>
+                    <form class="catalog__form" id="addCardForm">
+                        <div class="catalog__form-group">
+                            <label for="titleInput" class="catalog__label">Название:</label>
+                            <input type="text" id="titleInput" class="catalog__input" placeholder="Введите название" required>
+                        </div>
+                        <div class="catalog__form-group">
+                            <label for="descriptionInput" class="catalog__label">Описание:</label>
+                            <textarea id="descriptionInput" class="catalog__textarea" placeholder="Введите описание" required></textarea>
+                        </div>
+                        <div class="catalog__form-group">
+                            <label for="imageInput" class="catalog__label">Ссылка на изображение:</label>
+                            <input type="url" id="imageInput" class="catalog__input" placeholder="Введите URL изображения" required>
+                        </div>
+                        <button type="submit" class="catalog__submit-button">Добавить карточку</button>
+                    </form>
+                </section>
+                <section class="catalog__cards">
+                    <h2 class="catalog__subtitle">Каталог товаров</h2>
+                    <div class="catalog__card-list" id="cardList">
+                        <!--+ Карточки будут добавляться сюда -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../js/script_page2.js"></script>
+</body>
+</html>
